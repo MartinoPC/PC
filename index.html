@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martino PC | Componenti Hardware Usati</title>
+    <title>Martino PC | Hardware Usato & Testato</title>
     <style>
         :root {
-            --bg-color: #f4f7f6; /* Grigio chiarissimo, non abbagliante */
+            --bg-color: #f0f4f8; /* Un azzurro/grigio molto chiaro e riposante */
             --primary-color: #2c3e50;
             --accent-color: #27ae60;
-            --text-color: #333;
+            --text-color: #34495e;
             --card-bg: #ffffff;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
@@ -24,134 +24,104 @@
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
             text-align: center;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: auto;
             padding: 20px;
         }
 
-        .intro {
-            background: #e8efed;
-            padding: 20px;
+        .info-box {
+            background: #d1dce5;
+            padding: 15px;
             border-radius: 8px;
             margin-bottom: 30px;
-            border-left: 5px solid var(--accent-color);
+            font-size: 0.95rem;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
+        .option-card {
             background: var(--card-bg);
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e1e8ed;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-
-        .price {
-            font-size: 1.4rem;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            font-size: 0.9rem;
-            color: #888;
-        }
+        h2 { color: var(--primary-color); margin-top: 0; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
 
         .btn-whatsapp {
-            display: block;
-            text-align: center;
+            display: inline-block;
             background-color: #25D366;
             color: white;
             text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
+            padding: 12px 25px;
+            border-radius: 30px;
             font-weight: bold;
+            transition: opacity 0.2s;
+            margin-top: 10px;
         }
 
-        .badge {
-            background: #eee;
-            padding: 3px 8px;
-            font-size: 0.8rem;
-            border-radius: 12px;
-        }
+        .btn-whatsapp:hover { opacity: 0.9; }
 
-        footer {
+        .footer {
             text-align: center;
-            padding: 40px;
-            color: #666;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 50px;
+            padding-bottom: 30px;
         }
+
+        .highlight { color: var(--accent-color); font-weight: bold; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Martino PC</h1>
-    <p>Hardware usato selezionato, testato e pronto all'uso</p>
+    <p>Componenti hardware selezionati e testati dal vivo.</p>
 </header>
 
 <div class="container">
-    <section class="intro">
-        <h2>Perché scegliere Martino PC?</h2>
-        <ul>
-            <li><strong>Prezzi Onesti:</strong> Risparmi il 10-20% rispetto ai prezzi medi eBay.</li>
-            <li><strong>Test dal vivo:</strong> Ci incontriamo e verifichiamo insieme il funzionamento della componente.</li>
-            <li><strong>Consegna a mano:</strong> Massima sicurezza, niente rischi di spedizione.</li>
-        </ul>
-    </section>
-
-    <h2>Componenti Disponibili</h2>
-    <div class="grid">
-        
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=RAM+DDR4" alt="RAM">
-            <h3>RAM Corsair Vengeance 16GB (2x8)</h3>
-            <span class="badge">DDR4 - 3200MHz</span>
-            <p>Testata con MemTest86, zero errori.</p>
-            <p class="old-price">Prezzo eBay: ~55€</p>
-            <p class="price">45€</p>
-            <a href="https://wa.me/TUONUMERO?text=Ciao%20Martino,%20sono%20interessato%20alle%20RAM" class="btn-whatsapp">Verifica disponibilità</a>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200?text=SSD+SAMSUNG" alt="SSD">
-            <h3>SSD Samsung 860 EVO 500GB</h3>
-            <span class="badge">SATA III</span>
-            <p>Stato salute: 98% (CrystalDiskInfo).</p>
-            <p class="old-price">Prezzo eBay: ~40€</p>
-            <p class="price">30€</p>
-            <a href="https://wa.me/TUONUMERO?text=Ciao%20Martino,%20sono%20interessato%20all'SSD" class="btn-whatsapp">Verifica disponibilità</a>
-        </div>
-
+    
+    <div class="info-box">
+        <strong>Nota bene:</strong> Tratto principalmente componenti (RAM, SSD, CPU) che hanno circa <span class="highlight">4-5 anni di vita</span>. I miei prezzi sono solitamente inferiori del <span class="highlight">10-20%</span> rispetto alle medie di vendita di eBay.
     </div>
+
+    <div class="option-card">
+        <h2>Ho visto un tuo annuncio</h2>
+        <p>Se mi stai contattando per un annuncio specifico visto su altre piattaforme (Subito, Marketplace, ecc.):</p>
+        <ul>
+            <li>Specifica chiaramente <strong>quale componente</strong> hai visto.</li>
+            <li>Concordiamo un appuntamento per la <strong>consegna a mano</strong>.</li>
+            <li>Potrai verificare il funzionamento con i miei strumenti prima dell'acquisto.</li>
+        </ul>
+        <a href="https://wa.me/393446086909?text=Ciao%20Martino,%20ti%20contatto%20per%20l'annuncio%20di:" class="btn-whatsapp">Scrivimi per un annuncio</a>
+    </div>
+
+    <div class="option-card">
+        <h2>Cerco una componente specifica</h2>
+        <p>Non hai trovato quello che cerchi? Chiedimi pure, ma per favore segui queste linee guida:</p>
+        <ul>
+            <li><strong>Sii preciso:</strong> Indica modello esatto, frequenza o capacità (es. "Cerco RAM DDR4 16GB 3200MHz").</li>
+            <li><strong>Budget:</strong> Se hai un'idea di prezzo, dichiarala subito. In alternativa, userò come riferimento la media eBay scontata del 15%.</li>
+            <li><strong>Consegna:</strong> Solo scambio a mano in zona [Tua Zona].</li>
+        </ul>
+        <a href="https://wa.me/393446086909?text=Ciao%20Martino,%20cerco%20le%20seguenti%20componenti:" class="btn-whatsapp">Invia una richiesta</a>
+    </div>
+
 </div>
 
-<footer>
-    <p>Martino PC - Vendita occasionale tra privati</p>
-    <p>Zona: [Inserisci la tua città/zona]</p>
-</footer>
+<div class="footer">
+    <p>Martino PC - Vendita occasionale tra privati (Art. 67 DPR 917/86)</p>
+    <p>Solo scambio a mano | Garanzia di funzionamento al momento della consegna</p>
+</div>
 
 </body>
 </html>
