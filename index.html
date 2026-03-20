@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martino PC | Componenti Hardware Usati</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6; /* Grigio chiarissimo, non abbagliante */
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intro {
+            background: #e8efed;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            text-align: center;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .badge {
+            background: #eee;
+            padding: 3px 8px;
+            font-size: 0.8rem;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Martino PC</h1>
+    <p>Hardware usato selezionato, testato e pronto all'uso</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>Perché scegliere Martino PC?</h2>
+        <ul>
+            <li><strong>Prezzi Onesti:</strong> Risparmi il 10-20% rispetto ai prezzi medi eBay.</li>
+            <li><strong>Test dal vivo:</strong> Ci incontriamo e verifichiamo insieme il funzionamento della componente.</li>
+            <li><strong>Consegna a mano:</strong> Massima sicurezza, niente rischi di spedizione.</li>
+        </ul>
+    </section>
+
+    <h2>Componenti Disponibili</h2>
+    <div class="grid">
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=RAM+DDR4" alt="RAM">
+            <h3>RAM Corsair Vengeance 16GB (2x8)</h3>
+            <span class="badge">DDR4 - 3200MHz</span>
+            <p>Testata con MemTest86, zero errori.</p>
+            <p class="old-price">Prezzo eBay: ~55€</p>
+            <p class="price">45€</p>
+            <a href="https://wa.me/TUONUMERO?text=Ciao%20Martino,%20sono%20interessato%20alle%20RAM" class="btn-whatsapp">Verifica disponibilità</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=SSD+SAMSUNG" alt="SSD">
+            <h3>SSD Samsung 860 EVO 500GB</h3>
+            <span class="badge">SATA III</span>
+            <p>Stato salute: 98% (CrystalDiskInfo).</p>
+            <p class="old-price">Prezzo eBay: ~40€</p>
+            <p class="price">30€</p>
+            <a href="https://wa.me/TUONUMERO?text=Ciao%20Martino,%20sono%20interessato%20all'SSD" class="btn-whatsapp">Verifica disponibilità</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Martino PC - Vendita occasionale tra privati</p>
+    <p>Zona: [Inserisci la tua città/zona]</p>
+</footer>
+
+</body>
+</html>
